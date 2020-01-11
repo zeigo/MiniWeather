@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="12月11日"
+        android:textColor="@color/colorFont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--更新时间-->
+
+    <TextView
+        android:id="@+id/degree_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="24"
+        android:textColor="@color/colorFont"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/dateTime" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="℃"
+        android:textColor="@color/colorFont"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/degree_text"
+        app:layout_constraintTop_toTopOf="@+id/degree_text" />
+
+    <TextView
+        android:id="@+id/weather_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="多云"
+        android:textColor="@color/colorFont"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/degree_text"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/update_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/degree_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="数据发布于"
+        android:textColor="@color/colorFont"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree_text" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+</android.support.constraint.ConstraintLayout>

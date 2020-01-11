@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MiniWeather</string>
+    <string name="hefeng_apiprefix">https://free-api.heweather.net/s6/weather/</string>
+    <string name="hefeng_forecast">forecast</string>
+    <string name="hefeng_now">now</string>
+    <string name="daxing">CN101011100</string>
+    <string name="sdk_key">54c2de43a61240cf918a66fc66bdf679</string>
+    <string name="web_key">8ad3b3cb4ae1492d8b1567e444ff2c36</string>
+    <string name="search_city">请输入城市名称</string>
+</resources>
